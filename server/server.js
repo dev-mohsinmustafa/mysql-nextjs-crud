@@ -1,7 +1,13 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 const express = require('express');
-const executeQuery = require('./config/db');
+const { executeQuery } = require('./config/db');
 const app = express();
 const port = 3000;
+
+const cors = require('cors');
+app.use(cors());
 
 app.use(express.json()); // Middleware to parse JSON requests
 
