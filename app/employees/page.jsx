@@ -1,5 +1,5 @@
 // Using App Router
-import EmployeeList from '@/components/EmployeeList/EmployeeList';
+import EmployeeList from '@/components/EmployeeList';
 import React from 'react';
 
 async function getEmployees() {

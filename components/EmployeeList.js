@@ -39,10 +39,11 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import styles from "../../styles/EmployeeList.module.css";
+import styles from "../styles/EmployeeList.module.css";
 import axios from "axios";
-import Header from "../Header";
+import Header from "./Header";
 function EmployeeList({ employeeData }) {
+    // console.log("Employees console props", employeeData);
     const router = useRouter();
     const deleteEmployee = async (id) => {
         let data = await axios.delete(`http://localhost:3000/api/employee/${id}`);

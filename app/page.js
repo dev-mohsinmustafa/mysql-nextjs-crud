@@ -1,4 +1,4 @@
-import EmployeeList from "@/components/EmployeeList/EmployeeList";
+import EmployeeList from "@/components/EmployeeList";
 import Header from "@/components/Header";
 
 export default function Home() {
